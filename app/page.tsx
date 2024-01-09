@@ -12,7 +12,7 @@ interface Task {
 
 export default function Home() {
     let getTaskList = []
-    let getTaskCount = 0
+    let getTaskCount = 1
     if (typeof window !== 'undefined') {
         // @ts-ignore
         getTaskList = JSON.parse(localStorage.getItem("taskList"));
